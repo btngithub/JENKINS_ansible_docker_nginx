@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Run bash command') {
             steps {
-                sh "cp index.html /tmp/"
+                sh "ansible all -m ping"
             }
         }
     }   
