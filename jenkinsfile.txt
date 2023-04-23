@@ -1,0 +1,10 @@
+pipeline {
+    agent any
+    stages {
+        stage('Run bash command') {
+            steps {
+                sh "cp index.html /tmp/"
+            }
+        }
+    }   
+}
