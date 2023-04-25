@@ -2,10 +2,10 @@ pipeline {
     agent {
         label 'ansible' 
     } 
-    stages {
-        stage('Run bash command') {
+    stages {  
+        stage('Run playbook') {
             steps {
-                sh "ansible all -m ping"
+                sh "ansible-playbook playbook.yaml -i hosts_git"
             }
         }
     }   
