@@ -5,7 +5,7 @@ pipeline {
     stages {  
         stage('Run playbook') {
             steps {
-                sh "ansible-playbook playbook.yaml -i hosts_git"
+                sh "ansible-playbook playbook.yaml"
             }
         }
     }   
