@@ -4,6 +4,8 @@
 
   tasks:
     
-  - name: Hello world!
-    debug:
-      msg: Hello world!
+  - name: Docker nginx container
+    shell: docker run -dit --name nginx -p 85:80 nginx:latest
+  
+  - name: Check web server
+    shell: curl localhost:85
