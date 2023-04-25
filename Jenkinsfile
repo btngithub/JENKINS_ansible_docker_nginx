@@ -2,10 +2,10 @@ pipeline {
     agent {
         label 'ansible' 
     } 
-    stages {  
+    stages {
         stage('Run playbook') {
             steps {
-                sh "ansible-playbook playbook.yaml -i /etc/ansible/hosts"
+                sh "docker run -dit --name nginx -p 85:80 nginx:latest"
             }
         }
     }   
