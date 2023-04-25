@@ -1,10 +1,9 @@
 ---
-
 - name: Test playbook
   hosts: test
 
-    tasks:
+  tasks:
     
-    - name: Hello world!
-      debug:
-        msg: Hello world!
+  - name: Hello world!
+    debug:
+      msg: Hello world!
