@@ -1,2 +1,2 @@
 [test]
-192.168.1.11 ansible_user=root2 ansible_password=p@ssw0rd
+192.168.1.11 ansible_user=root2 ansible_ssh_private_key_file=~/.ssh/ans
