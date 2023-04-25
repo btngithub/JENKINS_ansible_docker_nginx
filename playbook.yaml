@@ -9,3 +9,8 @@
   
   - name: Check web server
     shell: curl localhost:85
+    register: output
+   
+  - name: Show curl output
+    debug:
+      var: output.stdout
