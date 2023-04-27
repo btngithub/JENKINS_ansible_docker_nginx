@@ -11,6 +11,6 @@
     shell: curl localhost:85
     register: output
    
-  - name: Show curl output
+  - name: Show curl output willya
     debug:
       var: output.stdout
